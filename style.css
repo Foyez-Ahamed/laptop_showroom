@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+button{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container{
+  flex: 1;
+}
+
+.logo{
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 18px;
+    color: #5f5f79;
+}
+
+nav{
+    flex: 2;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #5f5f79;
+    font-size: 18px;
+    font-weight: 700;
+}
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+}
+.cart img{
+    border-radius: 50%;
+    /* background: #1877f2; */
+   
+}
+
+.logo-container, .nav-links, .cart{
+    display: flex;
+    align-items: center;
+}
+
+.presentation{
+    display: flex;
+    width: 90%;
+    min-height: 80vh;
+    margin: auto;
+    align-items: center;
+}
+
+.introduction{
+    /* background: lightblue; */
+    flex: 1;
+}
+
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+     text-transform: capitalize;
+    background: linear-gradient(to right, #494964, #6f6f89);
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+
+.cta-select{
+    border: 2px solid #c26bba;
+    background: transparent;
+    text-transform: capitalize;
+    color: #c26bba;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-add{
+    background: #c26bba;
+    text-transform: capitalize;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    margin: 30px 0px 0px 30px;
+}
+
+.cover{
+    flex: 1;
+}
+.cover img{
+    height: 60vh;
+    /* filter: drop-shadow(0px 5px 3px #000000); */
+    animation: drop 1s ease ;
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width:1024px) {
+  
+    body{
+        overflow-x: hidden;
+    }
+
+ .presentation{
+    flex-direction: column;
+ }
+
+ .introduction{
+    margin-top: 5vh;
+    text-align: center;
+ }
+
+ .intro-text h1{
+     font-size: 30px;
+ }
+ .intro-text p{
+    font-size: 18px;
+ }
+ .cta{
+    padding: 10px 0px 0px 0px;
+ }
+}
